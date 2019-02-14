@@ -56,7 +56,7 @@ var arr = [
     { type: 'text', text: '诺！是不是美美哒~' },
     { type: 'br' },
     { type: "wait", time: 1000 },
-    { type: "text", text: "是不是最可爱(*^o^*)" }
+    { type: "text", text: "是不是最可爱(*^o^*)" },
     { type: 'br' },
     { type: "wait", time: 1000 },
     { type: "text", text: "爱你哟 爱你哟 ^з^)-☆" }

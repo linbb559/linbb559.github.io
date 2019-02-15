@@ -27,18 +27,48 @@
 
         </span>
     </div>
-    <div class="title">有个超可爱女朋友是种怎样的体验？</div>
+    <div class="title" id="tt" onclick="dd();">有个超可爱女朋友是种怎样的体验？</div>
     <div class="answer" id="answer">
         <div class="author-wrapper">
-            <img src="img/wo.jpg" alt="chenjiandongx" class="author-head">
+            <img src="img/wo.jpg" alt="chenjiandongx" class="author-head" onclick="dd()">
             <span class="author-name">就是小林啊</span>
             <!-- <button class="follow"><strong>+</strong><span>关注</span></button> -->
         </div>
         <div class="answer-content" id="answer-content"></div>
     </div>
+    <audio style="display:none; height: 0" id="bg-music" preload="auto" src="img/aini.mp3" loop="loop"></audio>
 </body>
 <script src="js/eventEmitter.js"></script>
 <script src="js/autotype.js"></script>
 <script src="js/index.js"></script>
+<script>
 
+    // document.addEventListener('DOMContentLoaded', function () {
+    //     function audioAutoPlay() {
+    //         var audio = document.getElementById('bg-music');
+    //         let playPromise = audio.play();
+    //         if (playPromise !== undefined) {
+    //             playPromise.then(_ => {
+    //                 // 这个时候可以安全的暂停
+    //                 video.pause();
+    //             })
+    //             .catch(error => {
+    //                 console.log("error")
+    //             });
+    //         }
+    //         document.addEventListener("WeixinJSBridgeReady", function () {
+    //             audio.play();
+    //         }, false);
+    //     }
+    //     audioAutoPlay();
+    // });
+    function dd() {
+        console.log('ddddd');
+        var audio = document.getElementById("bg-music");
+        audio.play();
+        setTimeout(function(){
+            audio.pause();
+        }, 3000);
+    }
+</script>
 </html>

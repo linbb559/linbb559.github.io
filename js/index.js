@@ -51,16 +51,12 @@ var arr = [
     { type: 'wait', time: 1000 },
     { type: 'text', text: '不管了，给你们看张她的照片吧~' },
     { type: 'wait', time: 1000 },
-    { type: 'img', src: 'img/luan.jpg', id: "cat", style: "width: 200px; height:200px; display: block;margin-left: auto;margin-right: auto;margin-top: 20px;margin-bottom: 20px;" },
+    { type: 'img', src: 'img/luan1.jpg', id: "cat", style: "width: 200px; height:200px; display: block;margin-left: auto;margin-right: auto;margin-top: 20px;margin-bottom: 20px;" },
     { type: 'wait', time: 1000 },
     { type: 'text', text: '诺！是不是美美哒~' },
     { type: 'br' },
     { type: "wait", time: 1000 },
-    { type: "text", text: "是不是最可爱(*^o^*)" },
-    { type: 'br' },
-    { type: "wait", time: 1000 },
-    { type: "text", text: "爱你哟 爱你哟 ^з^)-☆" }
-
+    { type: "text", text: "是不是最可爱(*^o^*)" }
 ]
 
 var autoType = new AutoType(content, arr);
